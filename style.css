@@ -6,10 +6,10 @@
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-header, footer {
+header, footer, #container {
     background-color: beige;
     padding: 30px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 main {
     display: flex;
@@ -17,18 +17,17 @@ main {
     padding: 160px;
 }
 #container {
-    border: 2px solid black;
-    padding: 30px;
-    width: 20%;
-}
-#container{
     border-radius: 20px;
+    width: 20%;
 }
 button, input {
     padding: 2px;
 }
 label, input {
     display: block;
+}
+.choice {
+    display: inline;
 }
 footer {
     position: absolute;
