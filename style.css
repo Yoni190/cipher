@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+header, footer {
+    background-color: beige;
+    padding: 30px;
+    border: 1px solid black;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 160px;
+}
+#container {
+    border: 2px solid black;
+    padding: 30px;
+    width: 20%;
+}
+#container{
+    border-radius: 20px;
+}
+button {
+    padding: 2px;
+}
+label, input {
+    display: block;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
