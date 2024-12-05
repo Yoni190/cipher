@@ -45,7 +45,7 @@
   #root, #__next {
     isolation: isolate;
   }
-  
+
 h1 {
     font-family: "Yuji Mai";
 }
@@ -80,4 +80,8 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+.radio {
+    display: flex;
+    gap: 10px;
 }
