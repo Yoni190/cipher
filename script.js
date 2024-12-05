@@ -1,10 +1,22 @@
 let button = document.getElementById("decipher");
 let radioButtons = document.querySelectorAll('input[type="radio"]');
+const container = document.querySelector("#decipher-container");
+const label = document.createElement("label");
+const decipheredCode = document.createElement("div");
+const selection = document.querySelector("#cipher-techniques");
+
+label.textContent = "Deciphered Code: "
+decipheredCode.style.border = "2px solid black";
+decipheredCode.style.padding = "5px";
+decipheredCode.style.borderRadius = "5px";
+decipheredCode.style.backgroundColor = "white";
 
 const downLetter = "abcdefghijklmnopqrstuvwxyz";
 const capitalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const punc = ",./?;:'[{]}|`~!@#$%^&*()-_=+ "
 let sign = 0;
+
+
 
 //Check if left shift or right shift
 radioButtons.forEach((button)=> {
@@ -47,6 +59,8 @@ button.addEventListener("click", () =>{
             deciphered.push(shiftedLetter);
         }
     }
-   alert(deciphered.join(""));
+   decipheredCode.textContent = deciphered.join("");
+   container.appendChild(label);
+   container.appendChild(decipheredCode);
 
 });

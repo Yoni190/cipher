@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cipher</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Cipher</h1>
+        <h1>Ciphering/Deciphering Tool</h1>
     </header>
     <main>
         <div id="container">
             <label for="code">Code: </label>
             <input type="text" id="code">
-            <label for="shift">Shift Factor: </label>
+            <label for="shift" id="shift-label">Shift Factor: </label>
             <input type="number" id="shift">
-            <select>
+            <select id="cipher-techniques">
                 <option>Caesar Cipher</option>
-                <option>Vigenère cipher</option>
+                <option>ROT13</option>
             </select>
             <button id="decipher">Decipher</button>
             <div class="radio">
@@ -28,6 +31,7 @@
                 <input type="radio" id="left" class="choice" name="shift" value="left">
                 <label for="left" class="choice">Left Shift</label>
             </div>
+            <div id="decipher-container"></div>
         </div>
     </main>
     <footer>Yoni190 © Copyright</footer>
