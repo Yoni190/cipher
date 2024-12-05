@@ -69,6 +69,7 @@ function load_caesar(){
     radioContainer.appendChild(right_label);
     radioContainer.appendChild(left_input);
     radioContainer.appendChild(left_label);
+    radioButtons = document.querySelectorAll('input[type="radio"]');
     
 }
 
@@ -82,15 +83,8 @@ function load_rot13(){
 }
 
 //Check if left shift or right shift
-radioButtons.forEach((radio)=> {
-    radio.addEventListener("change", (event)=> {
-        if(event.target.value == "right"){
-            sign = 0;
-        }
-        else {
-            sign = 1;
-        }
-    });
+radioContainer.addEventListener("change", (event) => {
+    sign = event.target.value === "right" ? 0 : 1;
 });
 
 button.addEventListener("click", () =>{
