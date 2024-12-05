@@ -24,7 +24,7 @@ main {
 #container{
     border-radius: 20px;
 }
-button {
+button, input {
     padding: 2px;
 }
 label, input {
